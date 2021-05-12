@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+}
+
+.header {
+    width: 320px;
+    height: 44px;
+    background-color: #FFFFFF;
+    display: inline-block;
+}
+
+footer {
+    width: 320px;
+    height: 121px;
+    display: block;
+    padding: 24px 47px;
+    margin: 8px;
+    background-color: #FFFFFF;
+}
+
+.footer-text {
+    display: flex;
+    font-size: 17px;
+    text-align: justify;
+    padding-bottom: 16px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer li {
+    list-style: none;
+}
+
+
