@@ -13,8 +13,7 @@ body{
 }
 
 .header {
-    width: 320px;
-    height: 44px;
+    width: 100%;
     background-color: #FFFFFF;
     display: inline-block;
 }
@@ -24,9 +23,9 @@ body{
     visibility: hidden;
 }
 /*hamburguesa*/
-label,
-label::before,
-label::after{
+.raya,
+.raya::before,
+.raya::after{
     position: absolute;
     width: 18px;
     height: 2px;
@@ -37,7 +36,7 @@ label::after{
     -webkit-transition: 0.6s;
 }
 
-label{
+.raya{
     right: 0;
     cursor: pointer;
     top: 16px;
@@ -45,50 +44,57 @@ label{
     margin-right: 15px;
 }
 
-label::before{
+.raya::before{
     content: "";
-    /*transform: translateY(-3px);
-    -webkit-transform: translateY(-3px)*/
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px)
 }
 
-label::after{
+.raya::after{
     content: "";
-    /* transform: translateY(3px);
-    -webkit-transform: translateY(3px) */
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px)
 }
 
 /*animación con checked*/
-#menu:checked + label{
-    width: 0px;
+#menu:checked ~ .raya{
+ 
+    /* width: 0px; */
 }
 
-#menu:checked + label::before{
-    /*rotate: transform(45deg) translate(0px);
-    -webkit-rotate: transform(45deg) translate(0px);*/
+#menu:checked ~ .raya::before{
+    transform: rotate(45deg);
+    opacity: 1;
+    rotate: transform(45deg) translate(0px);
+    -webkit-rotate: transform(45deg) translate(0px);
     color: red;
 }
 
-#menu:checked + label::after{
-    /* rotate: transform(-45deg) translate(0px);
-    -webkit-rotate: transform(-45deg) translate(0px);*/
+#menu:checked ~ .raya::after{
+    transform: rotate(-45deg);
+    opacity: 1;
+    rotate: transform(-45deg) translate(0px);
+    -webkit-rotate: transform(-45deg) translate(0px);
     color: red;
 }
 
+/*AQUÍ ESTÁ EL MAIN*/
 .main{
     width: 320px;
     height: 303px;
 }
 
 h1{
-    margin-top: 29px;
-    margin-bottom: 16px;
     font-size: 36px;
     font-weight: 400;
-    font-family: 'IBM Plex Sans', sans-serif;
     letter-spacing: 0;
-    padding-right: 50px;
     line-height: 42px;
+    margin-top: 29px;
+    margin-bottom: 16px;
+    padding-right: 50px;
+    padding-left: 16px;
 }
+
 
 h1 .tachado{
     text-decoration: line-through;
@@ -100,9 +106,74 @@ h1 .tachado{
 
 .main p.mobileP{
     visibility: visible;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 36px;
+}
+/* BOTÓN DE TOP */
+/* .boton-top{
+    cursor: pointer;
+    width: 288px;
+    height: 48px;
+    margin: 0px 16px 24px 16px;
+    background-color: #00F3BB;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 0px;
+} */
+.boton-top{
+    text-decoration: none; /*no funciona y sigue apareciendo el underline*/
+    cursor: pointer;
+    width: 288px;
+    height: 48px;
+    margin: 0px 16px 24px 16px;
+    background-color: #00F3BB;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 0px;
+    padding: 16px 59px;
+} 
+
+.novedades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h2 .pregunta{
+    background-color: #FFFFFF;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    /*FALTA DEFINIR EL PADDING*/
 }
 
 
+.boton-bot{
+    text-decoration: none; /*no funciona y sigue apareciendo el underline*/
+    cursor: pointer;
+    width: 288px;
+    height: 48px;
+    margin: 0px 16px 24px 16px;
+    background-color: #00F3BB;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 0px;
+    padding: 13px 43px;
+    margin-bottom: 67px;
+} 
 
 footer {
     width: 320px;

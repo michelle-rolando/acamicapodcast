@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="src/mobile.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/cdb5c3fce8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,28 +22,29 @@
 		<header class="header">
 			<img src="images/logo.svg" alt="logo" class="logo"></img>
 			<input type="checkbox" name="menu" id="menu">
-			<label for="menu"></label>
+			<label class="raya" for="menu"></label>
 			<nav class="nav">
 				<ul>
-					<li><a href="#">EPISODIOS</a></li>
-					<li><a href="#">NOSOTROS</a></li>
-					<li><a href="#">ENTREVISTAS</a></li>
-					<li><a href="#">TOPICOS</a></li>
+					<li><a href="#episodios">EPISODIOS</a></li>
+					<li><a href="#nosotros">NOSOTROS</a></li>
+					<li><a href="#entrevistas">ENTREVISTAS</a></li>
+					<li><a href="#topicos">TOPICOS</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<!--AQUÍ COMIENZA EL MAIN-->
 		<section class="main">
-			<h1>Hello <span class="tachado">world</span> pale blue dot.</h1>
+			<h1>Hello <s>world</s> pale blue dot.</h1>
 			<p class="desktopP">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos
 				los jueves cada 15 días.</p>
 			<p class="mobileP">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves
 				cada 15 días.</p>
 
-			<button class="boton-top">Conocé más</button>
+			<!-- <button class="boton-top"> <a href="#nosotros">CONOCÉ MÁS</a></button> -->
+				 <a href="#nosotros" class="boton-top">CONOCÉ MÁS</a>
 		</section>
-		<section class="episodios">
+		<section class="episodios" id="episodios">
 			<h2>Episodios</h2>
 			<div>
 				<iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%"
@@ -54,7 +58,7 @@
 
 			</div>
 		</section>
-		<section class="nosotros">
+		<section class="nosotros" id="nosotros">
 			<div>
 				<img src="images/phone.png" alt="">
 			</div>
@@ -66,7 +70,7 @@
 					vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
 			</div>
 		</section>
-		<section class="invitadas">
+		<section class="invitadas" id="entrevistas">
 			<h2>Invitadas/os estelares</h2>
 			<div>
 				<img src="images/grace-hopper.png" alt="grace-hopper">
@@ -80,7 +84,7 @@
 			</div>
 		</section>
 
-		<section class="temas">
+		<section class="temas" id="topicos">
 			<h2>Algunos de nuestros temas</h2>
 			<div>
 				<p> <img src="images/icon1.svg" alt="icono 1"> Trabajo remoto </p>
@@ -91,8 +95,9 @@
 
 		</section>
 		<section class="novedades">
-			<h2>¿Querés las últimas novedades?</h2>
-			<button class="boton-bot">ESCUCHÁ LOS EPISODIOS</button>
+			<h2 class="pregunta">¿Querés las últimas novedades?</h2>
+			<!-- <button class="boton-bot">ESCUCHÁ LOS EPISODIOS</button> -->
+			<a href="#episodios" class="boton-bot">ESCUCHÁ LOS EPISODIOS</a>
 		</section>
 
 		<!--AQUÍ COMIENZA EL FOOTER-->
