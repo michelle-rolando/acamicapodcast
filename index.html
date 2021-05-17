@@ -2,33 +2,66 @@
 <html>
 
 <head>
-	<title>Podcast channel</title>
+	<title>Hello Pale Blue Dot</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="description" content="El portal de podcasts que explora el mundo de la programación y
+	la tecnología. Nuevos episodios, todos los jueves cada 15 días.">
 	<link rel="stylesheet" href="src/styles.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/cdb5c3fce8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<div>
-		<!--AQUÍ COMIENZA EL HEADER-->
-		<header class="header">
-			<img src="images/logo.svg" alt="logo" class="logo"></img>
-			<input type="checkbox" name="menu" id="menu">
-			<label class="raya" for="menu"></label>
-			<nav class="nav">
-				<ul>
-					<li><a href="#episodios">EPISODIOS</a></li>
-					<li><a href="#nosotros">NOSOTROS</a></li>
-					<li><a href="#entrevistas">ENTREVISTAS</a></li>
-					<li><a href="#topicos">TOPICOS</a></li>
-				</ul>
+		<!--AQUÍ COMIENZA EL HEADER/ MENU DE NAVEGACIÓN-->
+		<header>
+			<!-- DESKTOP -->
+			<nav class="menuNav-desktop">
+				<div class="container">
+					<ul class="nav-items">
+						<!-- LOGO -->
+						<li>
+							<img src="images/logo.svg" alt="logo" class="logo">
+						</li>
+						<!-- NAV ITEM -->
+						<li class="nav-item">
+							<a href="#episodios">EPISODIOS</a>
+						</li>
+						<li class="nav-item">
+							<a href="#nosotros">NOSOTROS</a>
+						</li>
+						<li class="nav-item">
+							<a href="#entrevistas">ENTREVISTAS</a>
+						</li>
+						<li class="nav-item">
+							<a href="#topicos">TOPICOS</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- MOBILE -->
+			<nav>
+				<div class="collapsible-menu">
+					<input type="checkbox" id="menu">
+					<label for="menu">
+						<!-- LOGO Y HAMBURGUESA -->
+						<img src="images/logo.svg" alt="logo" class="logo-mobile">
+						<i class="fas fa-bars"></i>
+						<i class="fas fa-times"></i>
+					</label>
+					<div class="menu-content">
+						<ul>
+							<li> <a href="#episodios">EPISODIOS</a> </li>
+							<li> <a href="#nosotros">NOSOTROS</a></li>
+							<li> <a href="#entrevistas">ENTREVISTAS</a></li>
+							<li> <a href="#topicos">TÓPICOS</a></li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 
@@ -36,61 +69,85 @@
 		<section class="main">
 			<h1>Hello <s>world</s> pale blue dot.</h1>
 			<p class="desktopP">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
-				episodios, todos
-				los jueves cada 15 días.</p>
+				episodios, todos los jueves cada 15 días <span class="bluedot">.</span></p>
 			<p class="mobileP">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves
 				cada 15 días.</p>
 
-			<!-- <button class="boton-top"> <a href="#nosotros">CONOCÉ MÁS</a></button> -->
 			<a href="#nosotros" class="boton-top">CONOCÉ MÁS</a>
 		</section>
-		<section class="episodios" id="episodios">
-			<h2>Episodios</h2>
-			<div>
-				<iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%"
-					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				<iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%"
-					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				<iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%"
-					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				<iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%"
-					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
+		<!-- EPISODIOS -->
+		<section class="background">
+			<h2 class="titulo-blanco titulo-margin-left titulo-blanco-mobile" id="episodios">Episodios</h2>
+			<div class="spotify">
+				<div>
+					<iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%"
+					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+				<div>
+					<iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%"
+					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>	
+			</div>
+			<div class="spotify padding">
+				<div>
+					<iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%"
+					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+				<div>
+					<iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%"
+					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
 			</div>
 		</section>
-		<section class="nosotros" id="nosotros">
+
+		<!-- NOSOTROS -->
+		<section class="nosotros">
+			<img src="images/phone.png" class="phone" id="nosotros" alt="Imagen de un teléfono con una foto de Mary Allen Wilkes; debajo hay un breve texto de 'The Secret History of Women in Coding'.">
+		
 			<div>
-				<img src="images/phone.png" alt="">
-			</div>
-			<div>
-				<h2>De dónde venimos</h2>
-				<p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+			<h2 class="titulo-negro titulo-margin-left-mobile">De dónde venimos</h2>
+			<!-- DESKTOP -->
+			<p class="texto texto-margin-bottom">Our posturings, our imagined self-importance, the delusion that we have some privileged position in
 					the Universe, are challenged by this point of pale light.</p>
-				<p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+			<p class="texto">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
 					vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-			</div>
-		</section>
-		<section class="invitadas" id="entrevistas">
-			<h2>Invitadas/os estelares</h2>
-			<div>
-				<img src="images/grace-hopper.png" alt="Grace Hopper junto a una IBM System 360.">
-				<img src="images/Katie-Bouman.png"
-					alt="Katie Bouman extendiendo los brazos frente a bloques de discos duros.">
-				<img src="images/margaret_hamilton.png"
-					alt="Margaret Hamilton sosteniendo un bloque de documentos con el sofware de navegación para el proyecto Apolo XI.">
-			</div>
-			<div>
-				<img src="images/1950.png"
-					alt="Una computadora Univac 1103 de E.R.A.(Engineering Research Associates) en los años '50.">
-				<img src="images/eniac.png"
-					alt="Operadoras de computadora con una Eniac - la primera computadora programable de uso general del mundo">
-				<img src="images/susan-kare.png" alt="Susan Kare con tres computadoras Macintosh detrás de ella.">
+			<!-- MOBILE -->
+			<p class="texto-mobile2 texto-margin-bottom">Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+				the Universe, are challenged by this point of pale light.</p>
+			<p class="texto-mobile2">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+				vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
 			</div>
 		</section>
 
+		<!-- INVITADAS -->
+		<section class="invitadas" id="entrevistas">
+			<h2 class="titulo-negro titulo-margin-left-mobile titulo-margin-left">Invitadas/os estelares</h2>
+			<!-- IMAGENES -->
+			<div class="container-images">
+				<img src="images/grace-hopper.png" class="images" 
+					alt="Grace Hopper junto a una IBM System 360.">
+				<img src="images/Katie-Bouman.png" class="images"
+					alt="Katie Bouman extendiendo los brazos frente a bloques de discos duros.">
+				<img src="images/margaret_hamilton.png" class="images"
+					alt="Margaret Hamilton sosteniendo un bloque de documentos con el sofware de navegación para el proyecto Apolo XI.">
+				<img src="images/1950.png" class="images"
+					alt="Una computadora Univac 1103 de E.R.A.(Engineering Research Associates) en los años '50.">
+				<img src="images/eniac.png" class="images"
+					alt="Operadoras de computadora con una Eniac - la primera computadora programable de uso general del mundo">
+				<img src="images/susan-kare.png" class="images" 
+					alt="Susan Kare con tres computadoras Macintosh detrás de ella.">
+			</div>
+		</section>
+
+		<!-- TOPICOS -->
 		<section class="temas" id="topicos">
-			<h2>Algunos de nuestros temas</h2>
 			<div>
+			<h2 class="titulo-negro titulo-margin-left titulo-margin-bottom titulo-margin-left-mobile">
+				Algunos de nuestros temas</h2>
+			</div>
+			<!-- SVGs CON TEXTO -->
+			<div class="container-temas">
 				<p> <img src="images/icon1.svg" alt="Trabajo remoto"> Trabajo remoto </p>
 				<p> <img src="images/icon2.svg" alt="Repensando la programación"> Repensando la programación </p>
 				<p> <img src="images/icon3.svg" alt="Bases del código"> Bases del código </p>

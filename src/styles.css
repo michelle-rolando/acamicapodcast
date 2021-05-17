@@ -18,65 +18,9 @@ body{
     display: inline-block;
 }
 
-/*para borrar el checkbox*/
-#menu{
-    visibility: hidden;
-}
-/*hamburguesa*/
-.raya,
-.raya::before,
-.raya::after{
-    position: absolute;
-    width: 18px;
-    height: 2px;
-    border-radius: 0.5px;
-    opacity: 100%;
-    background: #000;
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-}
 
-.raya{
-    right: 0;
-    cursor: pointer;
-    top: 16px;
-    margin-top: 16px;
-    margin-right: 15px;
-}
 
-.raya::before{
-    content: "";
-    transform: translateY(-3px);
-    -webkit-transform: translateY(-3px)
-}
 
-.raya::after{
-    content: "";
-    transform: translateY(3px);
-    -webkit-transform: translateY(3px)
-}
-
-/*animación con checked*/
-
-/* #menu:checked ~ .raya{
-     width: 0px; 
-} */
-
-#menu:checked ~ .raya::before{
-    transform: rotate(45deg);
-    opacity: 1;
-    rotate: transform(45deg) translate(0px);
-    -webkit-rotate: transform(45deg) translate(0px);
-    color: red;
-}
-
-#menu:checked ~ .raya::after{
-    transform: rotate(-45deg);
-    opacity: 1;
-    rotate: transform(-45deg) translate(0px);
-    -webkit-rotate: transform(-45deg) translate(0px);
-    color: red;
-}
 
 /*AQUÍ COMIENZA EL MAIN*/
 .main{
