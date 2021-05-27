@@ -1,216 +1,253 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Hello Pale Blue Dot</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="El portal de podcasts que explora el mundo de la programación y
+	la tecnología. Nuevos episodios, todos los jueves cada 15 días."
+    />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cdb5c3fce8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- BODY -->
+  <body>
+    <div class="respmenu">
+      <img class="logo" src="src/logo.svg" alt="logo BD" />
+      <input type="checkbox" name="checkbox" id="check" />
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+      <nav>
+        <ul class="list">
+          <li class="item"><a href="#episodios">EPISODIOS</a></li>
+          <li class="item"><a href="#nosotros">NOSOTROS</a></li>
+          <li class="item"><a href="#entrevistas">ENTREVISTAS</a></li>
+          <li class="item"><a href="#topicos">TÓPICOS</a></li>
+        </ul>
+      </nav>
+    </div>
 
-<head>
-	<title>Hello Pale Blue Dot</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta name="description" content="El portal de podcasts que explora el mundo de la programación y
-	la tecnología. Nuevos episodios, todos los jueves cada 15 días.">
-	<link rel="stylesheet" href="src/styles.css" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/cdb5c3fce8.js" crossorigin="anonymous"></script>
-</head>
+    <header>
+      <h1 class="titulo">
+        Hello <s>world</s> pale blue dot<span class="bluedot">.</span>
+      </h1>
+      <p class="texto-desktop">
+        El portal de podcasts que explora el mundo de la programación y la
+        tecnología. Nuevos episodios, todos los jueves cada 15 días.
+      </p>
+      <p class="texto-mobile">
+        Un podcast que explora el mundo de la programación. Nuevos episodios,
+        todos los jueves cada 15 días.
+      </p>
+      <!-- <a href="#nosotros" class="boton-top">CONOCÉ MÁS</a> -->
+      <button
+        class="boton-top"
+        onclick="location.href='#nosotros'"
+        type="button"
+      >
+        CONOCÉ MÁS
+      </button>
+    </header>
 
-<body>
-	<div>
-		<!--AQUÍ COMIENZA EL HEADER/ MENU DE NAVEGACIÓN-->
-		<header>
-			<!-- DESKTOP -->
-			<nav class="menuNav-desktop">
-				<div class="container">
-					<ul class="nav-items">
-						<!-- LOGO -->
-						<li>
-							<img src="images/logo.svg" alt="logo" class="logo">
-						</li>
-						<!-- NAV ITEM -->
-						<li class="nav-item">
-							<a href="#episodios">EPISODIOS</a>
-						</li>
-						<li class="nav-item">
-							<a href="#nosotros">NOSOTROS</a>
-						</li>
-						<li class="nav-item">
-							<a href="#entrevistas">ENTREVISTAS</a>
-						</li>
-						<li class="nav-item">
-							<a href="#topicos">TOPICOS</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<!-- MOBILE -->
-			<nav>
-				<div class="collapsible-menu">
-					<input type="checkbox" id="menu">
-					<label for="menu">
-						<!-- LOGO Y HAMBURGUESA -->
-						<img src="images/logo.svg" alt="logo" class="logo-mobile">
-						<i class="fas fa-bars"></i>
-						<i class="fas fa-times"></i>
-					</label>
-					<div class="menu-content">
-						<ul>
-							<li> <a href="#episodios">EPISODIOS</a> </li>
-							<li> <a href="#nosotros">NOSOTROS</a></li>
-							<li> <a href="#entrevistas">ENTREVISTAS</a></li>
-							<li> <a href="#topicos">TÓPICOS</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
+    <!-- EPISODIOS -->
+    <section id="episodios" class="episodios">
+      <h2 class="episodios-titulo">EPISODIOS</h2>
+      <div class= "episodios-container">
+        <iframe
+          src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+    </section>
 
-		<!--AQUÍ COMIENZA EL MAIN-->
-		<section class="main">
-			<h1>Hello <s>world</s> pale blue dot.</h1>
-			<p class="desktopP">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos
-				episodios, todos los jueves cada 15 días <span class="bluedot">.</span></p>
-			<p class="mobileP">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves
-				cada 15 días.</p>
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+      <img
+        class="imagen-nosotros"
+        src="src/phone.png"
+        alt="Imagen de un teléfono con una foto de Mary Allen Wilkes; debajo hay un breve texto de 'The Secret History of Women in Coding'."
+      />
+      <div class="container-nosotros">
+        <h2 class="nosotros-titulo">De dónde venimos</h2>
+        <p class="nosotros-texto">
+          Our posturings, our imagined self-importance, the delusion that we
+          have some privileged position in the Universe, are challenged by this
+          point of pale light.
+        </p>
+        <p class="nosotros-texto">
+          Our planet is a lonely speck in the great enveloping cosmic dark. In
+          our obscurity, in all this vastness, there is no hint that help will
+          come from elsewhere to save us from ourselves.
+        </p>
+      </div>
+    </section>
 
-			<a href="#nosotros" class="boton-top">CONOCÉ MÁS</a>
-		</section>
+    <!-- ENTREVISTAS -->
+    <section id="entrevistas" class="entrevistas">
+      <h2 class="entrevistas-titulo">Invitadas/os estelares</h2>
+      <div class="entrevistas-container">
+        <img
+          class="entrevistas-foto"
+          src="src/grace-hopper.png"
+          alt="Grace Hopper junto a una IBM System 360."
+        />
+        <img
+          class="entrevistas-foto"
+          src="src/Katie-Bouman.png"
+          alt="Katie Bouman extendiendo los brazos frente a bloques de discos duros."
+        />
+        <img
+          class="entrevistas-foto"
+          src="src/margaret_hamilton.png"
+          alt="Margaret Hamilton sosteniendo un bloque de documentos con el sofware de navegación para el proyecto Apolo XI."
+        />
+        <img
+          class="entrevistas-foto"
+          src="src/1950.png"
+          alt="Una computadora Univac 1103 de E.R.A.(Engineering Research Associates) en los años '50."
+        />
+        <img
+          class="entrevistas-foto"
+          src="src/eniac.png"
+          alt="Operadoras de computadora con una Eniac - la primera computadora programable de uso general del mundo"
+        />
+        <img
+          class="entrevistas-foto"
+          src="src/susan-kare.png"
+          alt="Susan Kare con tres computadoras Macintosh detrás de ella."
+        />
+      </div>
+    </section>
 
-		<!-- EPISODIOS -->
-		<section class="background">
-			<h2 class="titulo-blanco titulo-margin-left titulo-blanco-mobile" id="episodios">Episodios</h2>
-			<div class="spotify">
-				<div>
-					<iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%"
-					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>
-				<div>
-					<iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%"
-					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>	
-			</div>
-			<div class="spotify padding">
-				<div>
-					<iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%"
-					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>
-				<div>
-					<iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%"
-					height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>
-			</div>
-		</section>
+    <!-- TOPICOS -->
+    <section id="topicos" class="topicos">
+      <h2 class="topicos-titulo">Algunos de nuestros temas</h2>
+      <div class="topicos-container">
+        <div>
+          <img
+            class="topicos-imagen"
+            src="src/icon1.svg"
+            alt="Tres documentos se desplazan hacia una caja"
+          />
+          <h3>Trabajo remoto</h3>
+        </div>
+        <div>
+          <img
+            class="topicos-imagen"
+            src="src/icon2.svg"
+            alt="Una cabeza con un engranaje al centro"
+          />
+          <h3>Repensando la programación</h3>
+        </div>
+        <div>
+          <img
+            class="topicos-imagen"
+            src="src/icon3.svg"
+            alt="Una laptop con una representación de código"
+          />
+          <h3>Bases del código</h3>
+        </div>
+        <div>
+          <img
+            class="topicos-imagen"
+            src="src/icon4.svg"
+            alt="De una pila de monedas se desprenden unas unidades neuronales"
+          />
+          <h3>Seguridad informática</h3>
+        </div>
+      </div>
+    </section>
 
-		<!-- NOSOTROS -->
-		<section class="nosotros">
-			<img src="images/phone.png" class="phone" id="nosotros" alt="Imagen de un teléfono con una foto de Mary Allen Wilkes; debajo hay un breve texto de 'The Secret History of Women in Coding'.">
-		
-			<div>
-			<h2 class="titulo-negro titulo-margin-left-mobile">De dónde venimos</h2>
-			<!-- DESKTOP -->
-			<p class="texto texto-margin-bottom">Our posturings, our imagined self-importance, the delusion that we have some privileged position in
-					the Universe, are challenged by this point of pale light.</p>
-			<p class="texto">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
-					vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-			<!-- MOBILE -->
-			<p class="texto-mobile2 texto-margin-bottom">Our posturings, our imagined self-importance, the delusion that we have some privileged position in
-				the Universe, are challenged by this point of pale light.</p>
-			<p class="texto-mobile2">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
-				vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-			</div>
-		</section>
+    <section class="novedades">
+      <div>
+        <h2 class="novedades-titulo">¿Querés las últimas novedades?</h2>
+        <button
+          class="boton-bot"
+          onclick="location.href='#episodios'"
+          type="button"
+        >
+          ESCUCHÁ LOS EPISODIOS
+        </button>
+      </div>
+    </section>
 
-		<!-- INVITADAS -->
-		<section class="invitadas" id="entrevistas">
-			<h2 class="titulo-negro titulo-margin-left-mobile titulo-margin-left">Invitadas/os estelares</h2>
-			<!-- IMAGENES -->
-			<div class="container-images">
-				<img src="images/grace-hopper.png" class="images" 
-					alt="Grace Hopper junto a una IBM System 360.">
-				<img src="images/Katie-Bouman.png" class="images"
-					alt="Katie Bouman extendiendo los brazos frente a bloques de discos duros.">
-				<img src="images/margaret_hamilton.png" class="images"
-					alt="Margaret Hamilton sosteniendo un bloque de documentos con el sofware de navegación para el proyecto Apolo XI.">
-				<img src="images/1950.png" class="images"
-					alt="Una computadora Univac 1103 de E.R.A.(Engineering Research Associates) en los años '50.">
-				<img src="images/eniac.png" class="images"
-					alt="Operadoras de computadora con una Eniac - la primera computadora programable de uso general del mundo">
-				<img src="images/susan-kare.png" class="images" 
-					alt="Susan Kare con tres computadoras Macintosh detrás de ella.">
-			</div>
-		</section>
-
-		<!-- TOPICOS -->
-		<section class="temas" id="topicos">
-			<div>
-			<h2 class="titulo-negro titulo-margin-left titulo-margin-bottom titulo-margin-left-mobile">
-				Algunos de nuestros temas</h2>
-			</div>
-			<!-- SVGs CON TEXTO -->
-			<div class="container-temas">
-				<p> <img src="images/icon1.svg" alt="Trabajo remoto"> Trabajo remoto </p>
-				<p> <img src="images/icon2.svg" alt="Repensando la programación"> Repensando la programación </p>
-				<p> <img src="images/icon3.svg" alt="Bases del código"> Bases del código </p>
-				<p> <img src="images/icon4.svg" alt="Seguridad informática"> Seguridad informática </p>
-			</div>
-
-		</section>
-		<section class="novedades">
-			<h2 class="pregunta">¿Querés las últimas novedades?</h2>
-			<!-- <button class="boton-bot">ESCUCHÁ LOS EPISODIOS</button> -->
-			<a href="#episodios" class="boton-bot">ESCUCHÁ LOS EPISODIOS</a>
-		</section>
-
-		<!--AQUÍ COMIENZA EL FOOTER-->
-		<footer>
-			<div class="footer-text">
-				<p> <span class="copyright">&#169;</span> 2019— Hello blue pale dot </p>
-			</div>
-			<ul>
-				<li>
-						<a href="https://www.spotify.com/ar/home/"><i class="fab fa-spotify"></i></a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-					</li>
-					<li>
-						<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-					</li>
-					<li>
-						<a href="https://web.telegram.org/"> <i class="fab fa-telegram"></i> </a>
-					</li>
-
-				<!-- <li>
-					<a href="https://www.spotify.com/ar/home/"
-					><img src="images/spotify-brands.svg"
-							alt="ícono de Spotify" /></a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/">
-						<img src="images/instagram-brands.svg"
-							alt="ícono de Instagram" />s</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/">
-						<img src="images/twitter-brands.svg" 
-						alt="ícono de Twitter" />s</a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/">
-						<img src="images/facebook-brands.svg"
-						alt="ícono de Facebook" />s</a>
-				</li>
-				<li>
-					<a href="https://web.telegram.org/">
-						<img src="images/telegram-brands.svg"
-						alt="ícono de Telegram" />s</a>
-				</li> -->
-			</ul>
-		</footer>
-	</div>
-</body>
-
+    <footer>
+      <div>
+        <div class="footer-text">
+          <p><span class="copyright">&#169;</span> 2019— Hello blue pale dot</p>
+        </div>
+        <div class="social">
+          <ul class="social-container">
+            <li>
+              <a href="https://www.spotify.com/ar/home/" target="_blank"
+                ><i class="fab fa-spotify"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank">
+                <i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://web.telegram.org/" target="_blank">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
