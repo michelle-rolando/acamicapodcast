@@ -269,9 +269,6 @@ iframe {
 }
 
 .episodios {
-  /* height: 1150px;
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    clip-path: polygon(0 18%, 100% 0, 100% 82%, 0% 100%); */
   padding: 64px 0 143.5px 0;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   clip-path: polygon(0 calc(5vw), 0 100%, 100% calc(100% - 5vw), 100% 0);
@@ -324,7 +321,7 @@ iframe {
 .entrevistas-titulo {
   padding: 32px 16px 0 16px;
   margin-bottom: 14px;
-  font-size: 48px;
+  font-size: 36px;
   color: #060a24;
   letter-spacing: 0;
 }
@@ -368,7 +365,7 @@ iframe {
 }
 h3 {
   margin: auto;
-  width: 288px;
+  width: 260px;
   color: #060a24;
   font-family: "IBM Plex Sans";
   font-weight: 600;
@@ -379,10 +376,10 @@ h3 {
 
 /* NOVEDADES */
 .novedades {
-  /* height: 341px; */
   padding-top: 64px;
   background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   clip-path: polygon(0 calc(10vw), 0 100%, 100% 100%, 100% 0);
+  padding-bottom: 67px;
 }
 .novedades-titulo {
   width: 288px;
@@ -401,11 +398,7 @@ h3 {
   text-decoration: none;
   color: #060a24;
   cursor: pointer;
-  /* width: 288px;
-  height: 48px; */
   margin: auto;
-  margin-bottom: 24px;
-  padding: 16px 59px;
   display: flex;
   justify-content: center;
   background-color: #00f3bb;
@@ -468,6 +461,7 @@ footer {
   align-items: center;
   width: 227px;
 }
+
 /* MEDIA QUERY */
 
 @media only screen and (min-width: 900px) {
@@ -501,14 +495,11 @@ footer {
     margin: 26px 48px;
     min-height: 30px;
   }
-
-  /* tamaño */
   .respmenu input[type="checkbox"],
   .respmenu .fa-bars,
   .respmenu .fa-times {
     display: none;
   }
-
   .respmenu nav a:hover {
     color: #00f3bb;
     text-decoration: line-through;
@@ -517,13 +508,17 @@ footer {
     color: rgba(6, 10, 36, 0.56);
   }
 
-  /* header */
+  /* HEADER */
   header {
     padding-top: 2.5%;
     padding-left: 200px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+  }
+  h1 {
+    font-size: 64px;
+    letter-spacing: 0;
   }
   .bluedot {
     color: #0000ec;
@@ -539,43 +534,23 @@ footer {
     line-height: 24px;
     padding-left: 16px;
     margin-bottom: 56px;
+    padding-right: 550px;
   }
 
   /* EPISODIOS */
-  /* Definiendo el fondo azul */
-  iframe {
-    width: 100%;
-    height: 232px;
-    border: 0;
-  }
-
   .episodios {
-    padding: 64px 0 143.5px 0;
-    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-    clip-path: polygon(0 calc(5vw), 0 100%, 100% calc(100% - 5vw), 100% 0);
+    height: 870px;
+    padding-bottom: 0;
   }
   .episodios-titulo {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 36px;
+    font-size: 48px;
     color: #ffffff;
     letter-spacing: 0;
     line-height: 42px;
     margin-top: 4%;
-    margin-bottom: 21px;
+    padding-bottom: 26px;
     padding-left: 200px;
-  }
-
-  .episodios-container {
-    margin: 0 11px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 11px;
-  }
-  .episodios {
-    height: 870px;
-    padding-bottom: 0;
   }
   .episodios-container {
     max-width: 1240px;
@@ -590,26 +565,35 @@ footer {
   }
 
   /* NOSOTROS */
+  .nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 560px;
+    padding-bottom: 64px;
+  }
   .container-nosotros {
     margin-top: 150px;
-    padding-left: 100px;
+    padding-left: 30px;
   }
-
   .nosotros-titulo {
     width: auto;
     padding-top: 30px;
+    padding-bottom: 24px;
+    font-size: 48px;
   }
-
   .nosotros-texto {
     max-width: 464px;
-    padding: 0 0 22px 0;
+    padding-right: 150px;
   }
+
   /* ENTREVISTAS */
   .entrevistas-titulo {
     width: auto;
     padding-top: 0;
     padding-left: 200px;
-    width: auto;
+    padding-bottom: 36px;
+    font-size: 48px;
   }
   .entrevistas-container {
     display: grid;
@@ -617,5 +601,44 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+  }
+  /* TOPICOS */
+  .topicos {
+    margin-top: 64px;
+  }
+
+  .topicos-titulo {
+    font-size: 48px;
+    width: auto;
+    padding-left: 184px;
+    padding-bottom: 69px;
+  }
+  .topicos-container {
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+
+  /* NOVEDADES */
+  .novedades {
+    padding-bottom: 100px;
+  }
+  .novedades-titulo {
+    font-size: 48px;
+    margin-top: 150px;
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }
