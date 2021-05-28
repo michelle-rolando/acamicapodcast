@@ -298,7 +298,7 @@ iframe {
 /* NOSOTROS */
 .nosotros {
   padding: 0 16px;
-  margin-top: -115.5px;
+  margin-top: -115px;
 }
 .imagen-nosotros {
   display: flex;
@@ -448,7 +448,7 @@ footer {
 .fa-twitter,
 .fa-facebook,
 .fa-telegram {
-  color: #060A24;
+  color: #060a24;
 }
 
 .fa-spotify:hover,
@@ -582,8 +582,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 560px;
+    height: 540px;
     padding-bottom: 64px;
+    margin-top: -90px;
   }
   .container-nosotros {
     margin-top: 150px;
