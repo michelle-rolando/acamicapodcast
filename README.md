@@ -1,4 +1,4 @@
-# Acamica Podcast Project
+# Acámica Podcast Project
 
 Este es el proyecto de podcast.
 
